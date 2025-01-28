@@ -3,10 +3,10 @@ package gestorAplicacion.Servicios;
 import java.util.Random;
 import java.util.Scanner;
 
-import gestorAplicacion.usuarios.Bartender;
-import gestorAplicacion.usuarios.Cliente;
-import gestorAplicacion.usuarios.Conserje;
-import gestorAplicacion.usuarios.Suscripcion;
+import gestorAplicacion.personal.Bartender;
+import gestorAplicacion.personal.Cliente;
+import gestorAplicacion.personal.Conserje;
+import gestorAplicacion.Servicios.Suscripcion;
 
 public class MenuHabitaciones {
     private Habitacion[][] menu;
@@ -85,15 +85,15 @@ public class MenuHabitaciones {
 
             switch (opcion) {
                 case 1:
-                    Bar bar = new Bar();
-                    bar.atenderCliente(cliente, bartender);
+                    Bartender bar = new Bartender("Bartender", "Habitacion");
+                    bar.atenderCliente(Cliente, bartender);
                     break;
                 case 2:
                     // Llamar al conserje para limpiar la habitación
-                    conserje.limpiarHabitacion(habitacion);
+                    conserje.limpiarHabitacion(Habitacion);
                     break;
                 case 3:
-                    cliente.pagarCuenta();
+                    Cliente.pagarCuenta();
                     break;
                 case 4:
                     System.out.println("Saliendo del menú de opciones.");
