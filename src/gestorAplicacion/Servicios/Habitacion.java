@@ -1,11 +1,11 @@
-package gestorAplicacion.habitaciones;
+package gestorAplicacion.Servicios;
 
 import java.io.Serializable;
 
 public class Habitacion implements Serializable {
     private static final long serialVersionUID = 1L; // Identificador único para la serialización
 
-    private int numero;
+    private final int numero;
     private double precioBase;
     private String tipo;
     private String vista;

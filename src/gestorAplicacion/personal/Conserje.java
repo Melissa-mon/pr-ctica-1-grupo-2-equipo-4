@@ -1,5 +1,7 @@
 package gestorAplicacion.personal;
 
+import gestorAplicacion.Servicios.Habitacion;
+
 public class Conserje extends Empleado{
 
     public Conserje(String rol, String puesto) {
@@ -17,5 +19,9 @@ public class Conserje extends Empleado{
 
     public void lavarRopa(){
         
+    }
+
+    public void limpiarHabitacion(Habitacion habitacion) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }

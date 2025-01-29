@@ -75,4 +75,12 @@ public class Suscripcion{
     public void setPremioEspecial(boolean premioEspecial) {
         this.premioEspecial = premioEspecial;
     }
+
+    String getNivel() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    String getNivel() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }
